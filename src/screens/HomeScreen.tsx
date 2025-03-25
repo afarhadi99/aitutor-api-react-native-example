@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { View, StyleSheet, Text, Dimensions, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, Dimensions, TouchableOpacity, Image } from 'react-native';
 import { useTheme } from 'react-native-paper';
 import * as Animatable from 'react-native-animatable';
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import homeLogo from '../assets/home-logo.png'; // Adjust the path as needed
 
 // Define the screens in your navigation stack
 type RootStackParamList = {
@@ -24,7 +25,7 @@ const { width } = Dimensions.get('window');
 const HomeScreen = () => {
   const theme = useTheme();
   const navigation = useNavigation<HomeScreenNavigationProp>();
-  const titleRef = useRef<Animatable.Text>(null);
+  const titleRef = useRef<Animatable.View>(null); // Update ref type to Animatable.View
 
   useEffect(() => {
     // Start a shimmer animation on the title
@@ -66,19 +67,16 @@ const HomeScreen = () => {
         duration={1200} 
         style={styles.header}
       >
-        <LinearGradient
-          colors={['#8b5cf6', '#ec4899', '#f97316']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={styles.titleContainer}
-        >
-          <Animatable.Text 
+          <Animatable.View 
             ref={titleRef}
-            style={styles.title}
+            style={styles.logoWrapper}
           >
-            AI Tutor API
-          </Animatable.Text>
-        </LinearGradient>
+            <Image 
+              source={homeLogo} 
+              style={styles.logoImage} 
+              resizeMode="contain"
+            />
+          </Animatable.View>
         
         <Animatable.Text 
           animation="fadeIn" 
@@ -184,7 +182,7 @@ const HomeScreen = () => {
         </Animatable.View>
 
         {/* Streaming with RAG Card */}
-         <Animatable.View 
+        <Animatable.View 
           animation="fadeInUp" 
           duration={800} 
           delay={700}
@@ -272,15 +270,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 30,
+    alignItems: 'center', // Center the image horizontally
   },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
-    textShadowColor: 'rgba(0, 0, 0, 0.3)',
-    textShadowOffset: { width: 0, height: 2 },
-    textShadowRadius: 3,
+  logoWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  logoImage: {
+    width: 200, // Adjust based on your image's aspect ratio
+    height: 50, // Adjust based on your image's aspect ratio
   },
   subtitle: {
     fontSize: 16,
