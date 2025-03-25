@@ -438,25 +438,3 @@ java -version
 ```
 
 Ensure you're using a compatible JDK version (JDK 11 is recommended).
-
-### Getting Help
-
-If you encounter issues not covered here:
-
-1. Check the [React Native documentation](https://reactnative.dev/docs/troubleshooting)
-2. Visit the [AI Tutor API documentation](https://aitutor-api.vercel.app/docs)
-3. Open an issue in the GitHub repository
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
