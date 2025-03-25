@@ -38,6 +38,14 @@ A comprehensive React Native mobile application demonstrating the integration an
 
 This project serves as a reference implementation for integrating AI Tutor API's capabilities into a mobile application. It demonstrates how to leverage AI-powered workflows, chatbots, streaming responses, and Retrieval Augmented Generation (RAG) to create engaging and intelligent user experiences.
 
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0;">
+  <img src="https://img.mytsi.org/i/6ESy973.png" alt="Home Screen" width="18%" />
+  <img src="https://img.mytsi.org/i/eVrz974.png" alt="Workflow Screen" width="18%" />
+  <img src="https://img.mytsi.org/i/mCep975.png" alt="Chatbot Screen" width="18%" />
+  <img src="https://img.mytsi.org/i/3QKj976.png" alt="Streaming Chat" width="18%" />
+  <img src="https://img.mytsi.org/i/TcZH977.png" alt="RAG Screen" width="18%" />
+</div>
+
 ## Tech Stack
 
 The application is built using the following technologies:
@@ -47,7 +55,7 @@ The application is built using the following technologies:
 - [React Navigation](https://reactnavigation.org/) (v7.0.18) - Navigation library for React Native
 - [React Native Paper](https://callstack.github.io/react-native-paper/) (v5.13.1) - Material Design components for React Native
 - [AI Tutor API](https://aitutor-api.vercel.app/) - AI-powered API for creating intelligent chatbots and workflows
-- [AI Tutor RAG API](https://rag-api-llm.up.railway.app/) - Retrieval Augmented Generation API for document-based Q&A
+- [AI Tutor RAG API](https://rag-api-aitutor-beta.up.railway.app/) - Retrieval Augmented Generation API for document-based Q&A
 - [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) (v3.17.1) - Animation library
 - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) (v2.24.0) - Touch handling
 - [React Native Linear Gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient) (v2.8.3) - Gradient effects
