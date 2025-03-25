@@ -33,8 +33,6 @@ A comprehensive React Native mobile application demonstrating the integration an
 - [Project Structure](#project-structure)
 - [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
